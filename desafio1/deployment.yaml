@@ -15,8 +15,9 @@ spec:
         app: nginx
     spec:
       initContainers:
-      - name: init-myservice
-        image: busybox:1.28
+      - name: init-curl
+        image: curlimages/curl
+        command: ['sh', '-c', 'curl http://www.google.com']
       containers:
       - name: nginx
         image: nginx:1.14.2
