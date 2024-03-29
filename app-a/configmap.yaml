@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-app-a
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>APP A</title>
+    </head>
+    <body>
+        <h1>APP A</h1>
+        <p>APP A</p>
+    </body>
+    </html>
